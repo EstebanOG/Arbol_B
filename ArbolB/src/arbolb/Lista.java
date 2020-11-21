@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Usuario
+ * @author Esteban Olaya
  */
 public class Lista {
      // instance variables - replace the example below with your own

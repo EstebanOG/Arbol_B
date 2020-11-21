@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Usuario
+ * @author Esteban Olaya
  */
 public class Raiz {
     public static int grado;

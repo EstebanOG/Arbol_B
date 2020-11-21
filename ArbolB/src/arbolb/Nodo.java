@@ -7,7 +7,7 @@ package arbolb;
 
 /**
  *
- * @author Usuario
+ * @author Esteban Olaya
  */
 public class Nodo {
     public int[] valores;
