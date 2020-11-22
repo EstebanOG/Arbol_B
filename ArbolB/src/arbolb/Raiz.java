@@ -266,8 +266,17 @@ public class Raiz {
             for (int j = 0; nodo.nodo[i] != null && j < nodo.nodo[i].valores.length; j++) {
                 if (nodo.nodo[i].valores[j] != 0) {
                     arbol += nodo.nodo[i].valores[j] + ", ";
+                }else{
+                    if(j<2){
+                        arbol += "Null,";
+                    }else{
+                        arbol+=" Null";
+                    }
+                    
                 }
             }
+            if(nodo.nodo[i] == null)
+                arbol += "Null";
             arbol += " ]";
         }
         if (arbol.length() > (2 * grado + 3) * 4) {

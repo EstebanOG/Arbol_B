@@ -277,12 +277,17 @@ public class GUI extends javax.swing.JFrame {
     private void bVerArbolActionPerformed(java.awt.event.ActionEvent evt) {
         raiz1.arbol = "";
         if (ya) {
+            //Se imprime la Raiz del árbol
             String raiz = "raiz [ ";
             for (int i = 0; i < raiz1.primerNodo.valores.length && raiz1.primerNodo.valores[i] != 0; i++) {
                 raiz += raiz1.primerNodo.valores[i] + ", ";
             }
             raiz += " ]\n";
+            
+            //Se recorre el resto del árbol
             raiz += raiz1.llamarRecorrer();
+            
+            //Se envía la información del árbol por medio de un TextArea
             jTextArea1.setText(raiz);
         }
         frameArbol.setVisible(true);
