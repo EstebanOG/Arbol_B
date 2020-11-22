@@ -18,6 +18,8 @@ public class Raiz {
     public static int nivel = 1;
     public static int imprimir = 1;
     public static String arbol = "";
+    
+    
     public Raiz(int grado) {
         this.grado = grado;
         primerNodo = new Nodo();
