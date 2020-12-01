@@ -6,6 +6,7 @@
 package arbolb;
 
 import javax.swing.JOptionPane;
+import java.awt.event.ActionEvent;
 
 /**
  *
@@ -15,6 +16,14 @@ public class GUI extends javax.swing.JFrame {
 
     Lista datos;
     Raiz raiz1;
+
+    private mxGraph mGraph;
+    public int WinWidth = 700;
+    public int WinHeight = 600;
+    public int LROffset = 135;
+    public int DownOffset = 50;
+    public int nodeD = 26;
+    public int levelOffset = 50;    
     private int ordenArbol = 1;
     boolean ya = false;
     boolean existe = false;
@@ -274,7 +283,7 @@ public class GUI extends javax.swing.JFrame {
     
     /*ActionPerformed del botón ver arbol, el cual muestra el framArbol e imprime
     toda la información del arbol. */
-    private void bVerArbolActionPerformed(java.awt.event.ActionEvent evt) {
+    private void bVerArbolActionPerformed(ActionEvent evt) {
         raiz1.arbol = "";
         if (ya) {
             //Se imprime la Raiz del árbol
